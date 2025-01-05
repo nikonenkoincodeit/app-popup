@@ -1,0 +1,20 @@
+<svg width="70.468201" height="52.370285" viewBox="0 0 70.4682 52.3703" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<filter id="filter_3_45_dd" x="2.102234" y="2.037292" width="68.365967" height="50.332993" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_3_45_dd)">
+		<path id="Polygon 1" d="M8.11 20.37C5.43 21.3 5.43 25.1 8.11 26.03L59.82 44.08C63.07 45.22 66.46 42.8 66.46 39.36L66.46 7.04C66.46 3.59 63.07 1.18 59.82 2.32L8.11 20.37Z" fill="#E5DCEF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Polygon 1" d="" fill="#8056B2" fill-opacity="0" fill-rule="evenodd"/>
+	</g>
+	<path id="Polygon 2" d="M13.54 21.31C11.76 21.93 11.76 24.46 13.54 25.09L56.82 40.2C60.07 41.33 63.47 38.92 63.47 35.48L63.47 10.92C63.47 7.48 60.07 5.07 56.82 6.2L13.54 21.31Z" fill="#B389E4" fill-opacity="1.000000" fill-rule="nonzero"/>
+	<path id="Polygon 2" d="M13.54 21.31C11.76 21.93 11.76 24.46 13.54 25.09L56.82 40.2C60.07 41.33 63.47 38.92 63.47 35.48L63.47 10.92C63.47 7.48 60.07 5.07 56.82 6.2L13.54 21.31ZM13.87 24.14L57.15 39.25Q58.13 39.59 59.04 39.46Q59.95 39.33 60.79 38.74Q61.63 38.14 62.05 37.32Q62.47 36.51 62.47 35.48L62.47 10.92Q62.47 9.89 62.05 9.07Q61.63 8.26 60.79 7.66Q59.95 7.06 59.04 6.93Q58.13 6.81 57.15 7.15L13.87 22.25Q13.54 22.37 13.37 22.61Q13.2 22.84 13.2 23.2Q13.2 23.55 13.37 23.79Q13.54 24.03 13.87 24.14Z" fill="#8056B2" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>
