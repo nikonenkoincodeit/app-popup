@@ -29,6 +29,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000;
 }
 
 .wrapper-popup.show {
@@ -297,7 +298,6 @@
   overflow: hidden;
   border-radius: 50%;
   position: relative;
-  /* background: var(--diskBackground); */
   background: rgb(163, 122, 213);
   border: 1px solid rgba(107, 72, 149, 0.87);
   box-shadow: inset 0px 0px 26.3px 0px rgba(0, 0, 0, 0.25);
@@ -306,7 +306,6 @@
 .BMFmK:nth-child(2n + 1) {
   border: 1px solid rgba(107, 72, 149, 0.05);
   background: rgb(196, 171, 225);
-  /* background: radial-gradient(52.33% 52.33% at 32.75% 33.58%, var(--sectorBackgroundGradientStart) 0%, var(--sectorBackgroundGradientEnd) 100%), linear-gradient(0deg, var(--oddSectorBackground) 0%, var(--oddSectorBackground) 100%); */
 }
 
 .BMFmK {
