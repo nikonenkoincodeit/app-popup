@@ -20,23 +20,19 @@
 
 /*--------------------------*/
 .wrapper-popup {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  pointer-events: none;
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  transition: opacity 0.5s ease-in-out;
 }
 
 .wrapper-popup.show {
-  opacity: 1;
-  pointer-events: all;
+  display: flex;
 }
 
 .box-popup {
@@ -90,6 +86,7 @@
 }
 
 .box-popup-text {
+  cursor: pointer;
   text-align: center;
   color: #935dd2;
   font-family: "Open Sans", serif;
@@ -196,10 +193,9 @@
   .box-popup-roulette {
     max-width: fit-content;
   }
-  /* .wrapper-box {
-    width: 100%;
-    max-width: 100%;
-  } */
+  .popup-roulette-overlay {
+    transform: scale(0.6);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -237,6 +233,9 @@
   .wrapper-box {
     width: 100%;
     max-width: 100%;
+  }
+  .popup-roulette-overlay {
+    transform: scale(0.9);
   }
 }
 
@@ -298,11 +297,16 @@
   overflow: hidden;
   border-radius: 50%;
   position: relative;
-  background: var(--diskBackground);
+  /* background: var(--diskBackground); */
+  background: rgb(163, 122, 213);
+  border: 1px solid rgba(107, 72, 149, 0.87);
+  box-shadow: inset 0px 0px 26.3px 0px rgba(0, 0, 0, 0.25);
 }
 
 .BMFmK:nth-child(2n + 1) {
-  background: radial-gradient(52.33% 52.33% at 32.75% 33.58%, var(--sectorBackgroundGradientStart) 0%, var(--sectorBackgroundGradientEnd) 100%), linear-gradient(0deg, var(--oddSectorBackground) 0%, var(--oddSectorBackground) 100%);
+  border: 1px solid rgba(107, 72, 149, 0.05);
+  background: rgb(196, 171, 225);
+  /* background: radial-gradient(52.33% 52.33% at 32.75% 33.58%, var(--sectorBackgroundGradientStart) 0%, var(--sectorBackgroundGradientEnd) 100%), linear-gradient(0deg, var(--oddSectorBackground) 0%, var(--oddSectorBackground) 100%); */
 }
 
 .BMFmK {
@@ -325,7 +329,7 @@
   overflow: hidden;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 35px;
   line-height: 1.375;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -334,6 +338,7 @@
 
 .color-red {
   color: #d61208;
+  font-size: 40px;
 }
 
 .circle-animation {

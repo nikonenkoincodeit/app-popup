@@ -1,9 +1,13 @@
+const wrapperPopupRef = document.querySelector(".js-wrapper-popup");
 const wrapperRouletteRef = document.querySelector(".js-wrapper-roulette");
 const boxPopupBodyRef = document.querySelector(".js-box-popup-roulette");
 const popupTitleRef = document.querySelector(".js-box-popup-title");
 const popupBtnRef = document.querySelector(".js-box-popup-btn");
+const popupCloseRef = document.querySelectorAll(".js-box-popup-close");
 const boxPopupRouOverRef = document.querySelector(".js-box-popup-roulette-overlay");
 const canvasRef = document.getElementById("canvas");
+
+let isClose = false;
 
 function setHeightEl() {
   const size = Math.min(boxPopupBodyRef.clientWidth, 600);
@@ -13,18 +17,29 @@ function setHeightEl() {
 }
 
 function setAnimation() {
-  console.log("circle-animation");
+  if (!isClose) {
+    wrapperRouletteRef.classList.remove("animation-roulette");
+    wrapperRouletteRef.classList.add("circle-animation");
 
-  wrapperRouletteRef.classList.remove("animation-roulette");
-  wrapperRouletteRef.classList.add("circle-animation");
-  setTimeout(() => {
-    popupTitleRef.textContent = "ОГО! Вашу знижку -60% активовано!";
-    Draw();
-    stopAnimation();
-  }, 3500);
+    setTimeout(() => {
+      isClose = true;
+      popupTitleRef.textContent = "ОГО! Вашу знижку -60% активовано!";
+      popupBtnRef.textContent = "ПЕРЕЙТИ НА САЙТ";
+      Draw();
+      stopAnimation();
+    }, 3500);
+    return;
+  }
+  closePopup();
+}
+
+function closePopup() {
+  wrapperPopupRef.classList.remove("show");
 }
 
 popupBtnRef.addEventListener("click", setAnimation);
+popupCloseRef[0].addEventListener("click", closePopup);
+popupCloseRef[1].addEventListener("click", closePopup);
 window.addEventListener("load", setHeightEl);
 window.addEventListener("resize", setHeightEl);
 
